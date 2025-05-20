@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Formats + website Embedding(iframe tag)</title>
+    <!-- SVG tag article:https://www.codewithharry.com/tutorial/working-with-svg
+         
+        About all Image formats:https://develofper.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types -->
+</head>
+<body>
+<!-- Common Image File Type:
+     1.JPEG:JPEGs(Joint photographic Expert Groups) can store high-resolution images, they are primarily known for their compression, which can result in a loss of detail and quality. Lossy compression is the main factor that allows JPEGs to achieve smaller file sizes, but it also means some image data is discarded, potentially reducing resolution
+
+     USE CASE:JPEG images are widely used for digital photos and online displays due to their ability to balance image quality with smaller file sizes. They are commonly used for web images, digital photography, non-professional printing, email, and presentations. --->
+
+<img src="sky_sunset_nature.jpg" alt="JPEGs Image">
+     
+<!-- 2.PNG: (Portable Network Graphic) images offer higher quality than JPEG images because they use lossless compression, while JPEGs use lossy compression. This means that PNGs retain all the original image data during compression, whereas JPEGs discard some information to reduce file size.
+     A PNG  file is a type of raster image file that is commonly used on the internet. PNG files are 'lossless. ' This means they have a fixed number of pixels, and do not lose any quality when they are compressed.
+
+     USE CASES:web graphics, logos, icons, and illustrations, particularly when transparency and high image quality are needed --->
+
+    <img src="snoopy.png" alt="PNG Image">
+
+<!-- 3.SVG:(Scalable Vector Graphics) basically they are used to make logo which can be zoomed in and can maintain its graphic resolution.
+     SVGs store graphics using mathematical formulas based on points and lines, allowing for scaling without loss of quality.
+
+     USE CASES: ideal for logos, icons, and other graphics that need to appear at various sizes on the web.
+     
+      xmlns="https://wwww.w3.org/2000/svg" you can add this if there is problem in svg like it id not showing in web page -->
+    <svg xmlns="https://wwww.w3.org/2000/svg" height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg> 
+    <img src="nature.svg" alt="Sample SVG">
+
+<!-- Iframes:used to embedd other website into your web page.
+     Article:https://www.codewithharry.com/tutorial/html-iframes
+
+     Attributes of iFrame:
+    a)src: Specifies the URL of the page to embed.
+    b)height and width: Define the dimensions.
+    c)frameborder: Indicates whether to display a border.
+    d)scrolling: Controls the scrollbars.
+    e)name: For targeting the iFrame in JavaScript. -->
+
+    <!-- Embedding a website -->
+     <iframe height="600" width="600" src="https://www.codewithharry.com/" frameborder="0"></iframe>
+
+     <!-- here is an example of embedding a yt vedieo by Share option.NOTE:make sure that there is no addblocker or unhook type of extention is on.Otherwise vedieo will not work. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fhoDRB53DwY?si=DW_5S_e7mhK6tm0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
