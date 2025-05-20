@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTITIES ,CODE TAG AND MORE ON HTML</title>
+</head>
+<body>
+    <!-- HTML entities: are used to write or include those words into a web page which collides with HTML tags. 
+         Common html entities
+         1.&lt;  for <
+         2.&gt;  for >
+         3.&amp; for &
+         4.&nbsp; for a non-breaking space
+         5.&copy; for © -->
+         <!-- we can easily write it. -->
+    3>4
+    <!-- but in this case we have to write actual tag in a web page.But <p></p> this colides with actual paragraph tag so vs code take it as a tag and does not print it. -->
+    this is code for paragraph <p></p>
+    <!-- but here we can see with use with the entities we can also write and include tags into our web page. -->
+     3&gt;4
+    this is code for paragraph &lt;p &gt;&lt;/p&gt;;
+
+    <!-- here we have use &copy, &amp and &nbsp tag -->
+    copyright &copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp; Amarnath Sharma
+
+    <!-- some more use cases of entities tag -->
+     <p>The price is 10 &lt; 20.</p>
+     <p>Copyright &copy; 2023.</p>
+     <p>This is an example&nbsp;text.</p>
+      <hr>
+      <!-- Pre tag: is used to include spaces into it -->
+    <pre>
+     <p>Hello curently i am learning pre tag</p>
+     my   name    is    Amamrnath      
+                                   sharma.
+     <hr>                           
+    </pre>
+ <!-- HTML quotation tag: is commonly used in textual content.
+      <blockquote> for block quotations and <q> for inline quotations 
+
+      (i) What Are <blockquote> and <q> Tags?
+      The <blockquote> and <q> tags serve to define quotations in HTML.
+         While <blockquote> is used for longer, block-level quotes, <q> is used for shorter, inline quotes.
+
+      (ii)Why Use These Tags?
+      They provide semantic meaning to your quotations, making it easier for search engines
+      to understand the context and relevance of the content.-->
+      <!-- <blockquote> use case -->
+        <blockquote cite="https://en.wikipedia.org/wiki/History_of_India">
+        Anatomically modern humans first arrived on the Indian subcontinent between 73,000 and 55,000 years ago.[1] The earliest known human remains in South Asia date to 30,000 years ago.
+        </blockquote>
+        <!--hr tag: is use to create horizontal line to seperate topics -->
+        <hr>
+
+      <!-- q tag use case: -->
+        <q cite="https://en.wikipedia.org/wiki/History_of_India">Anatomically modern humans first arrived on the Indian subcontinent between 73,000 and 55,000 years ago.[1] The earliest known human remains in South Asia date to 30,000 years ago.</q>
+       <hr>
+        <!-- Code Tag: Used to write code in web page.NOTE:hesre you can see that code tag is always written inside pre tag because
+             it preserves whitespace and line breaks, which is crucial for displaying code accurately
+             but we have to inclide HTML entities tag otherwies it will not work.   -->
+        <!-- you can use prism js library to highlight the code. i will tell you later.-->
+         <pre><code>
+         #include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World\n");
+    return 0;
+}
+
+         </code></pre>
+</body>
+</html>
