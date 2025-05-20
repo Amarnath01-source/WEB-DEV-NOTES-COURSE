@@ -1,0 +1,10 @@
+
+/*Here, dot (.) means ID and hash(#) means class  */
+/* youcan also paste the hash(#) and then the id to search for any particular topic in a page tha is given an id and you will land there */
+.car{
+    background-color: rgb(67, 67, 213);
+}
+
+#firsthand{
+    background-color: red;
+}
