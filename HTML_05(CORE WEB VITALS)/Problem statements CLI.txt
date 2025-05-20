@@ -1,0 +1,38 @@
+1."CLS issues resolved in Lighthouse, but still experiencing layout shifts on the live site."
+Answer: Lighthouse provides lab data, which may not capture all real-world scenarios. To diagnose live site issues, consider using real user monitoring tools like Google Analytics or the Chrome User Experience Report. These tools can provide field data to identify and address CLS problems that occur under actual user conditions.
+
+2."Why is CLS important for SEO and user experience?"
+Answer: CLS measures visual stability. A high CLS score indicates unexpected layout shifts, which can frustrate users and lead to accidental clicks. Google considers CLS as a ranking factor, so improving it can enhance both user satisfaction and search engine visibility.
+
+3."How can I prevent layout shifts caused by images and ads?"
+Answer: To prevent such shifts:
+a.Images: Always include width and height attributes or use CSS to reserve space. This ensures the browser allocates the correct space before the image loads.
+YouTube
+b.Ads and Embeds: Allocate fixed dimensions or use placeholders. This prevents content from moving when ads load asynchronously.
+c.Fonts: Use font-display: swap in CSS to avoid invisible text during font loading. This reduces layout shifts caused by late-loading fonts
+
+4."What tools can help measure and improve CLS?"
+Answer: Several tools can assist:
+PageSpeed Insights: Provides both lab and field data on CLS and other Core Web Vitals.
+Qiita
+Lighthouse: Offers detailed lab analysis and suggestions for improvement.(do not use it,its just lab data not live data)
+Chrome DevTools: The Performance panel can visualize layout shifts during page load.
+Web Vitals Extension: A Chrome extension that displays real-time metrics, including CLS, as you browse
+
+Types of metrics
+There are several other types of metrics that are relevant to how users perceive performance.
+
+a.Perceived load speed: how quickly a page can load and render all of its visual elements to the screen.
+b.Load responsiveness: how quickly a page can load and execute any required JavaScript code in order for components to respond quickly to user interaction
+c.Runtime responsiveness: after page load, how quickly can the page respond to user interaction.
+d.Visual stability: do elements on the page shift in ways that users don't expect and potentially interfere with their interactions?
+e.Smoothness: do transitions and animations render at a consistent frame rate and flow fluidly from one state to the next?
+
+Important metrics to measure
+a.First Contentful Paint (FCP): measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. (lab, field)
+b.Largest Contentful Paint (LCP): measures the time from when the page starts loading to when the largest text block or image element is rendered on the screen. (lab, field)
+c.Interaction to Next Paint (INP): measures the latency of every tap, click, or keyboard interaction made with the page, and—based on the number of interactions—selects the
+  worst interaction latency of the page (or close to the highest) as a single, representative value to describe a page's overall responsiveness. (lab, field)
+d.Total Blocking Time (TBT): measures the total amount of time between FCP and TTI where the main thread was blocked for long enough to prevent input responsiveness. (lab)
+e.Cumulative Layout Shift (CLS): measures the cumulative score of all unexpected layout shifts that occur between when the page starts loading and when its lifecycle state changes to hidden. (lab, field)
+e.Time to First Byte (TTFB): measures the time it takes for the network to respond to a user request with the first byte of a resource. (lab, field)

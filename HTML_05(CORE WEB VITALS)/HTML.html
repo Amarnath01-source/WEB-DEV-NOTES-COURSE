@@ -1,0 +1,66 @@
+<!-- CORE WEB VITALS 
+ Article: https://developers.google.com/search/docs/appearance/core-web-vitals#metrics
+
+ 1.SEO(Search Engine Optimization):  is the process of improving a website's visibility and ranking in search engine results pages (SERPs). 
+   This is achieved by optimizing the website's content, structure, and technical aspects to make it more appealing to search engines and users.
+   The goal of SEO is to attract organic traffic from search engines like Google without relying on paid advertising.You can use semantic and meta tags to improve SEO.
+   Article: https://developers.google.com/search/docs/fundamentals/seo-starter-guide 
+
+2.Cumulative Layout Shift (CLS):is a stable Core Web Vital metric. It's an important, user-centric metric for measuring visual stability because 
+  it helps quantify how often users experience unexpected layout shifts.bacically iy make sure that when websites load the paragraph layer or anty text 
+  which is not loaded then its position is taken by other elements when it take some time to load 
+  if you clicked into a button or any then that element pop up and you clicked so to prevent this mishappening we use cls core web vitals(how many element
+  layers shifted while loading a website and the time take to fully load a website ) 
+  more layers in t time bad cli
+  less layers in t time means good cli
+  Article : https://web.dev/articles/cls
+
+3.Largest contextual paint(LCP): The largest Element (taking largest data) in a website taking how much time to load
+Article: https://web.dev/articles/lcp
+
+4.First input delay(FID): if we click on a input element so how much time does it take to process and load it
+Article: https://web.dev/articles/fid
+but it is no more a web core vital. insted Interaction to next paint (INP) is used
+
+5.Interaction to next paint(INP):INP is a metric that assesses a page's overall responsiveness to user interactions by observing the latency of all click, 
+tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page.
+Article: https://web.dev/articles/inp --->
+
+   
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The <meta> tags in HTML provide metadata about the HTML document. Metadata is data (information) about data. <meta> tags always go inside
+          the document's <head> tag and are typically used to specify the character set, page description, keywords, author, and other metadata.
+          
+         Explanation of each meta tag:  -->
+    <!-- a)Character Encoding (charset): <meta charset="UTF-8"> sets the character encoding for the webpage. UTF-8 is the most common and recommended. -->
+         <meta charset="UTF-8"> 
+
+    <!-- b)Viewport: <meta name="viewport" content="width=device-width, initial-scale=1.0"> sets the viewport to scale the page to the screen width, useful for responsive design. -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- c)IE Compatibility: <meta http-equiv="X-UA-Compatible" content="ie=edge"> specifies that the page should be rendered using the latest rendering engine available on Internet Explorer. -->
+         <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Internet Explorer compatibility -->
+
+    <!-- d)Description: <meta name="description" content="This is a description of the web page"> provides a brief description of the webpage, which search engines may use in search results. -->
+          <meta name="description" content="This is a description of the web page"> <!-- Description for search engines -->
+
+    <!-- e)Keywords: <meta name="keywords" content="HTML, CSS, JavaScript"> specifies keywords for the webpage, which were historically used by search engines but are less relevant today. -->
+         <meta name="keywords" content="HTML, CSS, JavaScript"> <!-- Keywords for search engines -->
+
+    <!-- f)Author: <meta name="author" content="Your Name"> indicates the name of the author of the webpage.  --> 
+         <meta name="author" content="Your Name"> <!-- Author name -->
+
+    <title>ABOUT Amarnath Sharma</title>
+</head>
+<body>
+   <h2>Amamrnath Sharma</h2> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, nostrum odio consequuntur, quis tempora quia ratione facilis in aut molestiae illo illum nisi! Fugit ad iusto saepe sint debitis rerum.</p>
+
+  <!-- A favicon is a small icon that appears next to your website's title in browser tabs. It helps in branding and easy identification among multiple tabs. -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</body>
+</html>
