@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Learning Forums</title>
+</head>
+
+<body>
+    <h1>Form to Enter your name </h1>
+    <!-- This forms tag is used to make forms in a website Example:a login page.
+         There are two type of requests get and post request which we use in form tag
+         1.Post request: is used to give data to server in a example like a login page.
+         2.Get request: is used to get data from server example of getting your 12th 
+                        results after you enter your details   -->
+        <form action="post"> 
+          <!-- DIV TAG: we use div to create block element,basically if we create two input tag then it will expand 
+           vertically so we add div tag to prevent this by creting blocks horizontally downwards to seperate two input elements
+           I have further demonstrated two use case of div tag-->
+        <div>
+        <label for="username">Enter your username</label>
+        <!-- HTML INPUT TAG:These tags are being used to send information to web servers for login and
+         searching purposes.These are the backbone of interactive web application
+         NOTE:we have to first write input tag and then label tag
+         Article: https://www.codewithharry.com/tutorial/html-input-types  -->
+         
+        
+
+        <!-- 1.Text input:use for collecting simple text data -->
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <!-- br tag to seperate two blocks from each other  -->
+         <br>
+
+        <div>
+        <!-- 2.password input:Basically used to enter passwords. -->
+         <label for="password">Enter your password</label>
+        </div>
+        <div>
+         <input type="password" id="password" name="password" placeholder="Enter your Password">
+        </div>
+        <br>
+        <!-- 3.Radio tag:use to distribute a group of any noun.Example distributing group of fruits.animal,gender. --->
+        <div>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <br>
+        <div>
+            <!-- 4.Checkbox:we use to agree or disagree to certaing thing in website.Example agreeing to terms cookies or permissions in website etc. -->
+            <input type="checkbox" name="Suscribe" id="Suscribe" value="yes">
+            <label for="Suscribe">Suscribe</label>
+        </div>
+        <br>
+        <!-- TEXTAREA TAG: It is like forums tag which we can use for "descriptions" or like writting "about" section in a website   -->
+        <div>
+            <label for="comment">Enter you comment</label>
+            <br>
+            <textarea name="comments" rows="4" cols="22">Enter your comment here</textarea>
+        </div>
+        <!-- SELECT TAG:Thsi tag is like option to choose from -->
+        <div>
+            <select name="fruits" id="Fruits">
+                <option value="apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+                <option value="Guava">Guava</option>
+            </select>
+            <div>
+                <!-- to make submit button -->
+                <input type="submit" name="submit" id="submit" value="submit"/>
+            </div>
+        </div>
+</body>
+
+</html>
