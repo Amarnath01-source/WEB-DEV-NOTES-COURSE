@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- 1.preload="auto"
+      Use Case: When you want the browser to load the entire video (or as much as possible) in advance.
+
+      Best for:
+      a)Short videos.
+      b)Videos likely to be played soon (e.g. a teaser on a landing page).
+
+      Pros and Cons:
+      Pros: Improves playback speed.
+      Cons: Uses more bandwidth.
+      
+      Observation: the Brouser download the full video before playing it -->
+    <video height="600" width="338" preload="auto" src="vedieo.mp4" autoplay controls  ></video>
+<!-- 2.preload="metadata"
+     Use Case: When you only want the metadata (e.g. duration, dimensions,thumbnail) to be loaded, but not the actual video content.
+
+     Best for:
+     a)Displaying video information before playback.
+     b)Video previews, galleries, or playlists.
+
+     Pros and Cons:
+     Pros: Saves bandwidth, but still lets you show video length or thumbnails.
+     Cons: No buffering advantage.
+     
+     Observation: the vedio starts to download when you actually play it -->
+    <video src="vedieo.mp4" width="338" preload="metadata" height="600" controls></video>
+<!--3.preload="none"
+    Use Case: When you don’t want to load anything until the user explicitly starts the video.
+
+    Best for:
+    a)Saving data or bandwidth (e.g. mobile users).
+    b)Lazy-loading videos that might not be watched.
+
+    Pros and Cons:
+     Pros: Minimizes page load time.
+     Cons: May delay playback slightly when started  
+     
+     Observation: There is no thumbnail in the vedieo and its start to download after you play it.-->
+    <video src="vedieo.mp4"  preload="none" height="600" width="338" controls></video>
+</body>
+</html>
