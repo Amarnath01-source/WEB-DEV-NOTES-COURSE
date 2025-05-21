@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedieo,audio and Media</title>
+</head>
+<body> 
+    <!-- That is a vedieo tag use to put vedieos into page  -->
+
+     <!-- Attributes (for both audio and vedieo tag):
+          1.scr="" is used to put the name of vedieo file.
+          2.Controls: to give controls of that particular vedieo.
+          3.loop: repaetes the veideo automatically after its end.
+          4.muted:mutes the vedieo by defalt
+          5.Autoplay:Automatically Start playing the vedieo just after the page loads
+          6.height and width:to adjust the frame size of the vedieo
+          7.Preload: this attribute loads in a way that user wants to see
+
+            a) none: default value.it indicates that browser should not preload the audio file at all.The audio file will only Start downloading when the user initates playback.
+            b) metadata:This value tells the browser to preload only the metadata of the audio file,such as its duration and basic information  about the audio.This can be usefull if you want to display the audio duration to the user without fully loading the audio data.
+            c) auto: the value instructs the browser to preload the entire audio file as much as possible without delaying the loading of further important page content the browser will try to load the audio files in the bakground so it is ready to play when the user decides to start it -->
+        <video autoplay loop muted width="600" height="555" src="3971351-uhd_3840_2160_25fps.mp4" controls></video>
+
+        <!-- This an audio tag --->
+        <audio src="audio.mp3.mp3" autoplay muted controls></audio>
+
+</body>
+</html>
