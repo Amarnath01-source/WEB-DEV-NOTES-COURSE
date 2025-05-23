@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>   
+</head>
+<body>
+  <style> 
+  /* css:https://www.codewithharry.com/tutorial/css-home */
+      /* Article about selectors:https://www.codewithharry.com/tutorial/css-selectors */
+
+      /* The Cascade Algorithm:basically whenever there is multiple selectors for a HTML element or tag there can be confusion for vscode to understand the code 
+      so the algorithm or priority order is made to solve this conflict.
+
+      This is the priority order for the selectors:
+      Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+
+  /* element Selector */
+  div{
+    background-color: rgb(215, 161, 91);
+  }
+
+  /* Group Selector */
+   p,h1,span{
+    background-color: burlywood;
+    color: aqua;
+}
+
+  /* using internal css for id (ID selector) */
+  #red{
+    background-color: blueviolet;
+  }
+
+  /* using internal css for classes (Class Selector) */
+  .green{
+    background-color: green;
+  }
+
+ /* Child selector */
+  .blush > p {
+      background-color: rgb(201, 194, 62);
+      color: chocolate;
+  }
+  
+  /* decendent Selector */
+  div p{
+    background-color: rgb(39, 113, 113);
+
+  }
+
+  /* this is universal selector used to add css to all tags */
+  * {
+            color: purple;
+        }
+
+   /* pseudo selector*/
+   /* to use it comment out other two */
+    /* a:visited{ 
+        color: black;
+    }                 */
+
+    /* a:link{ 
+        color: red;
+       }              */ 
+
+    /* a:active{ 
+        background-color: crimson;
+    }                             */
+
+    a:hover
+    {
+      background-color: rgb(152, 80, 94); 
+    }
+
+    p:first-child{
+          background-color: coral;
+    }
+  </style> 
+  <!--  from here html -->
+  <div>
+    hey i am 1st div tag
+  </div> 
+
+  <!-- so in this case here are two div tag so the background color is declared in both the div tag -->
+  <div>
+    hey i am 2nd div tag
+  </div>
+
+  <!-- in this case we will use group selector -->
+ <h1>for example of group selector</h1>
+ <span>for example of group selector</span>
+ <p>for example of group selector</p>
+
+ <!-- so if de have to only add css in indivdual tag which is same as another so we have 
+     declare class or id of that particular tag.-->
+  <div id="red">
+    hey i am 3rd div tag 
+  </div>
+
+  <!-- we have declared class in div tag -->
+   <div class="green">
+    hey i am 4th div tag
+   </div>
+
+<!-- we will use child selector to add css to paragrapg tag. -->
+   <div class="blush">
+    hey i am 5th div tag
+    <P> Made by Amarnath Sharma</P>
+    </div>
+
+    <!-- here we will use desendent selector in order to apply css into p tag from these all tags -->
+     <!-- here univeral tag does not apply to decendent selector. -->
+   <div>
+    <article>
+    <p>
+    hi i am a decendent selector  
+    </p>
+    </article>
+    </div>
+
+    <div>
+        <a href="https://www.google.com">Google link</a>
+    </div>
+
+    <div>
+    <P>my name is 1st child</P>
+    <p>my anme is 2nd child</p>
+    </div>
+</body>
+</html>
