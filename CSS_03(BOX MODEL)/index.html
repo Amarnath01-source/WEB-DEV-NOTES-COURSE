@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Boxmodel</title>
+<!--
+
+CSS BOX MODEL DAIGRAM:
++-----------------------------------------------+       ← Margin:The margin is the space outside the element that separates it from other elements in the layout.
+|                 MARGIN AREA                   |
+|   +---------------------------------------+   |       ← Border:The border surrounds the content and padding and gives the visual border of the element.
+|   |             BORDER AREA               |   |
+|   |   +-----------------------------+     |   |       ← Padding:The space between the actual content and the border of the element is the padding.
+|   |   |         PADDING AREA        |     |   |
+|   |   |  +---------------------+    |     |   |
+|   |   |  |    CONTENT AREA     |    |     |   |       ← Content:The innermost component of the box model is the actual content of the element. It can be text, image, video, etc
+|   |   |  +---------------------+    |     |   |
+|   |   |                             |     |   |
+|   |   +-----------------------------+     |   |
+|   +---------------------------------------+   |
+|                                               |
++-----------------------------------------------+
+
+-->
+
+<style>
+.box1{
+    background-color: aqua;
+    color: brown;
+}
+.box2{
+    background-color: rgb(18, 18, 229);
+    color: aqua;
+}
+
+/* here we will apply box model
+   a)Padding:The space between the actual content and the border of the element is the padding.
+   b)border:The border surrounds the content and padding and gives the visual border of the element.
+   c)Margin:The margin is the space outside the element that separates it from other elements in the layout.
+   d)Content:The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.*/
+.box1{
+    margin: 10px;
+    border: 4px solid black
+    padding: 20px;
+     height: 100px;/* this height is for only used for content,not margin,border or padding */
+    
+    box-sizing: border-box;/*in this wi will not include margins  */
+    }
+/* Calculating the total dimension of the element
+   The total width and height of the element is calculated with the formula:
+   a)Total Width = content Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+   b)Total Height = content Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+</style>
+
+<body>
+<p class="box1">i am a boxmodel </p>
+<div class="box2">I am a box</div>
+<!-- MARGIN COLAPSE: if in case if margin of any two are unequal, the bigger margin will be taken into consideration to decide the margin between two elements.  -->
+ <h1>Margin colapse</h1>
+<img height="400" src="margin_colapse.png" alt="MARGIN COLAPSE" >
+</head>
+</body>
+</html>
