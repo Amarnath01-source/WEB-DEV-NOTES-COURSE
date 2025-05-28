@@ -58,11 +58,11 @@ p{
              /* TEXT DECORATION:use to decorate sentences or line
             There are many type of text decorations(take reference from here and experiment with them on ) */
 
-            /* a)solid    ――――――――――――――――――	A straight, solid line. Default for underline, overline, etc.
-               b)double   ═══════════════════	Two straight, solid parallel lines. Slightly thicker appearance.
-               c)dotted   ···················	Small round dots spaced evenly under the text.
-               d)dashed	  ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬	Broken dashes instead of a solid line. 
-               e)wavy	  ~~~~~~~~~~~~~~~~~~~	Wavy, squiggly line. Commonly used for spelling/grammar indication. 
+            /* a)solid    ――――――――――――――――――	  A straight, solid line. Default for underline, overline, etc.
+               b)double   ═════════════════	  Two straight, solid parallel lines. Slightly thicker appearance.
+               c)dotted   ···················	  Small round dots spaced evenly under the text.
+               d)dashed	  ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬	  Broken dashes instead of a solid line. 
+               e)wavy	  ~~~~~~~~~~~~~~~~~~~	  Wavy, squiggly line. Commonly used for spelling/grammar indication. 
                f)line-through: It draws a horizontal line through the middle of the text, commonly used to indicate deleted, unavailable, or discounted items.*/
             
             /* text-decoration: dashed; */
