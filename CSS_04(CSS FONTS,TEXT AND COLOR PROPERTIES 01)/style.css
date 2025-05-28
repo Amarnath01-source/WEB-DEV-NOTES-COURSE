@@ -1,0 +1,133 @@
+
+
+p{
+    /* this is a font_family: collection of multiple fonts style put together.
+     Article:https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+             Q) Why Multiple Fonts?
+                Different systems (Windows, macOS, Linux) have different fonts installed. Listing several fonts ensures a fallback
+                mechanism so the website still looks consistent even if some fonts are missing.it is arranged in the order of importance */
+              font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+              /* you can also use front from google fonts website by: (comment out by ctrl+/ to use,you can also select and ctrl+/ to comment multiple lines at a time )
+                 1.Embedding:you have to put embedded code in your <head> of your html page*/
+                  /* ex:<link rel="preconnect" href="https://fonts.googleapis.com">
+                      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">*/
+
+                 /* 2.Imorting:Embed code in the <head> of your html. */
+                      /* <style>
+                      @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+                      </style> */
+
+                 /* 3.css class as a variable style(put it inside a selector)
+                   ex: font-family: "Baloo Bhai 2", sans-serif;*/
+
+            /* fornt-size:to change front style. */
+            /* There are four value of font style.
+               1.normal: default.
+               2.italic: italic font.
+               3.oblique:Slanted version of the font. Not true italics — just a slanted form of the normal font.
+               4.oblique angle:Slants text by a custom angle(CSS+4 version).
+               These are not supported in all browsers yet, mostly experimental.it will not work with Css3 */
+
+            /* uncomment to use */
+            /* font-style: italic;  */
+            /* font-style: normal; */
+            /* font-style: oblique; */
+
+            /* font-weight:to set thickness or bold an element */
+            /* types of value of font-weight */
+
+            /* for setting up custom boldness  */
+               /* font-weight: 500;  */
+            
+               /* thin texts */
+            /* font-weight: lighter; */
+
+            /* boldest */
+            /* font-weight: bolder; */
+
+            /* Same as 700 */
+            /* font-weight: bold; */
+
+            /* default */
+            /* font-weight: normal; */
+        }
+
+        h1{
+             /* TEXT DECORATION:use to decorate sentences or line
+            There are many type of text decorations(take reference from here and experiment with them on ) */
+
+            /* a)solid    ――――――――――――――――――	A straight, solid line. Default for underline, overline, etc.
+               b)double   ═══════════════════	Two straight, solid parallel lines. Slightly thicker appearance.
+               c)dotted   ···················	Small round dots spaced evenly under the text.
+               d)dashed	  ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬	Broken dashes instead of a solid line. 
+               e)wavy	  ~~~~~~~~~~~~~~~~~~~	Wavy, squiggly line. Commonly used for spelling/grammar indication. 
+               f)line-through: It draws a horizontal line through the middle of the text, commonly used to indicate deleted, unavailable, or discounted items.*/
+            
+            /* text-decoration: dashed; */
+            /* text-decoration: dotted; */
+            /* text-decoration: double; */
+            /* text-decoration: line-through; */
+            /* text-decoration: none; */
+            /* text-decoration: overline; */
+            /* text-decoration: solid; */
+            /* text-decoration: underline; */
+            /* text-decoration: wavy; */
+            /* text-decoration: black,blue,greeen etc; */
+
+            /*1.Text-decoration-line:This property specifies what kind of text line decoration you want.*/
+            /* a)use to underline the text  */
+               /* text-decoration-line:underline; */
+
+            /* b) use to create a line over the text */
+            /* text-decoration-line: overline; */
+
+            /* c)used as defalt */
+            /* text-decoration-line: none; */
+
+            /* d)use to create a horizontal cut on the text */
+            /* text-decoration-line: line-through;  */
+
+             /*2.text-decoration-color property in CSS lets you change the color of decorations like underlines, overlines, and line-throughs, without changing the text color itself */
+            /*text-decoration-color:red; */
+             
+            /*3.text-decoration-style:  */
+            /* text-decoration-style: dashed; */
+            /* text-decoration-style: dotted; */
+            /* text-decoration-style: double; */
+            /* text-decoration-style: none; */
+            /* text-decoration-style: solid; */
+            /* text-decoration-style: wavy; */
+            /* text-decoration-style: calc(); */
+            /* text-decoration-style: inherit; */
+            /* text-decoration-style: initial; */
+            /* text-decoration-style: unset; */
+            /* text-decoration-style: var(); */
+
+             /*.line-height: it's a CSS property used to control the vertical spacing between lines of text. */
+            /*a)browser default(usually ~1.2–1.4) */
+            /* line-height: normal ; */
+
+            /* b)multiplies the font size */
+            /* line-height:1.5; */
+
+            /* c)Fixed spacing between lines */
+            /* line-height: 24px; */
+
+            /* d)150% of the element's font size */
+            /* line-height: 150%; */
+         
+            /*.letter-spacing:use to control horizontal spacing between characters in text */
+            
+            /* letter-spacing: 3px; */
+
+            /* letter-spacing:2rem */
+
+            /* letter-spacing 0.1em; */
+        }
+
+        div{
+
+
+        }
