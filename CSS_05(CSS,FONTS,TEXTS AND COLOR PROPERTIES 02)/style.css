@@ -9,12 +9,11 @@ h1{
    /* text-align: center; */
 
    /* it is used align texts according to the direction they are written
-                                     For left-to-right languages (like English):
-                                     text-align: end = aligns text to the right
-
-                                     For right-to-left languages (like Arabic or Hebrew):
-                                     text-align: end = aligns text to the left. */
-   /* /* text-align: end; */ 
+      For left-to-right languages (like English):
+      text-align: end = aligns text to the right
+      For right-to-left languages (like Arabic or Hebrew):
+      text-align: end = aligns text to the left. */
+   /* text-align: end; */ 
 
    /* It spreads the text so that both the left and right sides are straight and even — like in a newspaper. */
    /* text-align: justify;*/     
@@ -78,11 +77,8 @@ p{
        /* 4.Using RGBA: a here is tranperency of the color */
        /* color: rgba(127, 13, 139, 0.51); */
 
-       /* 5.Using HSL: HSL stands for:
-                    H = Hue (color type)
-                    S = Saturation (color intensity)
-                    L = Lightness (brightness) */
-              /* color: hsl(205, 46%, 38%); */
+       /* 5.Using HSL: HSL stands for: H = Hue (color types), S = Saturation (color intensity), L = Lightness (brightness) */
+       /* color: hsl(205, 46%, 38%); */
 
       /* HLSA: A here is opacity */
       /* color: hsla(0, 0%, 100%, 0.566); */
