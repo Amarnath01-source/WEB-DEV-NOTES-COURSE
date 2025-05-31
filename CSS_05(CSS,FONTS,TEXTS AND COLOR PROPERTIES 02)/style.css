@@ -1,0 +1,92 @@
+h1{
+ /* Text transform: is used to control the capitalisation of the text. */
+  /* text-transform:capitalize ;  */
+  /* text-transform: lowercase; */
+  /* text-transform: uppercase; */
+
+  /* Text-align: The text-align property in CSS is used to set the horizontal alignment of text within an element.  */
+
+   /* text-align: center; */
+
+   /* it is used align texts according to the direction they are written
+                                     For left-to-right languages (like English):
+                                     text-align: end = aligns text to the right
+
+                                     For right-to-left languages (like Arabic or Hebrew):
+                                     text-align: end = aligns text to the left. */
+   /* /* text-align: end; */ 
+
+   /* It spreads the text so that both the left and right sides are straight and even — like in a newspaper. */
+   /* text-align: justify;*/     
+   /* text-align: right;*/ 
+   /* text-align: left; */
+   
+    /* text-indent:moves the first line of a paragraph a little to the right (or left) to make it look neat. */
+   /* text-indent: 4px; */
+   
+   /* text-overflow property: they help control how text behaves when it overflows its container. */
+   
+     /* Hides anything outside the box */
+        /* text-overflow: hidden; */
+   
+    /* Adds "..." at the end */
+   /* text-overflow: ellipsis; */
+
+   /* cuts off (clips) any extra text that doesn't fit inside the box without showing anything extra like dots (...). */
+   /* text-overflow: clip; */   
+
+   /*Word-break property:It tells the browser how to break (or not break) long words when wrapping text. */
+      word-break: break-all;
+      /* word-break: keep-all; */
+      /* word-break: normal; */
+
+  /* The word-spacing property controls the space between words in your text. */
+      /* word-spacing: 3px; */
+
+   /* From here ,these topics of this selector is not for beggainers */
+  /* It adds shadow effects to text — like making it glow, pop, or look 3D. (better use it with the help of chat gpt)*/
+     /* text-shadow: 1px 1px 2px black, 0 0 10px red; */
+
+     /* text-rendering:The text-rendering property tells the browser how to draw the text — focusing on speed, legibility, or quality.
+                       It’s mostly used for SVG or fine-tuning how text looks on screen.*/
+
+  /*text-rendering: is a CSS property that gives the browser a hint about how to display (render) the text — whether it should prioritize speed, legibility, or precision.
+    It doesn't directly style the text like color or font-size, but it can affect how sharp or readable the text looks. */
+
+    /* Tries to match text shapes exactly (useful in SVGs or technical illustrations) */
+     text-rendering: geometricPrecision;
+
+     /* Improves readability (enables kerning, ligatures — good for body text) */
+     /* text-rendering:optimizeLegibility; */
+
+     /* Tries to match text shapes exactly (useful in SVGs or technical illustrations) */
+     /* text-rendering: optimizeSpeed; */
+
+}
+
+p{
+       /* Using colors in css: there are 5 ways to use color property in css
+       1.color: black; like this as normal. */
+         /* color: blanchedalmond; */
+
+       /* 2.using HEX color code:Hex color codes are used in CSS to set colors using hexadecimal values.usually we use it when we dont find that color in vscode*/
+       color: #1B1212 ;
+
+       /* 3.Using RGB code:*/
+       color:rgb(31, 31, 246)
+
+       /* 4.Using RGBA: a here is tranperency of the color */
+       /* color: rgba(127, 13, 139, 0.51); */
+
+       /* 5.Using HSL: HSL stands for:
+                    H = Hue (color type)
+                    S = Saturation (color intensity)
+                    L = Lightness (brightness) */
+              /* color: hsl(205, 46%, 38%); */
+
+      /* HLSA: A here is opacity */
+      /* color: hsla(0, 0%, 100%, 0.566); */
+
+     
+
+}
