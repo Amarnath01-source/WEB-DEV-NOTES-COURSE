@@ -6,17 +6,9 @@
     <title>CSS Selectors</title>   
 </head>
 <body>
-  <style> 
-  /* css:https://www.codewithharry.com/tutorial/css-home */
-      /* Article about selectors:https://www.geeksforgeeks.org/css-selectors */
+  <style>
 
-      /* The Cascade Algorithm:basically whenever there is multiple selectors for a HTML element or tag there can be confusion for vscode to understand the code 
-      so the algorithm or priority order is made to solve this conflict.
-
-      This is the priority order for the selectors:
-      Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
-
-  /* element Selector */
+/* This is a Element Selectors */
   div{
     background-color: rgb(215, 161, 91);
   }
@@ -25,7 +17,7 @@
    p,h1,span{
     background-color: burlywood;
     color: aqua;
-}
+   }
 
   /* using internal css for id (ID selector) */
   #red{
@@ -51,31 +43,31 @@
 
   /* this is universal selector used to add css to all tags */
   * {
-            color: purple;
-        }
+     color: purple;
+    }
 
    /* pseudo selector*/
    /* to use it comment out other two */
-    /* a:visited{ 
+    a:visited{ 
         color: black;
-    }                 */
+    }                
 
     /* a:link{ 
         color: red;
-       }              */ 
+    }              */ 
 
     /* a:active{ 
         background-color: crimson;
     }                             */
 
-    a:hover
+/*     a:hover
     {
       background-color: rgb(152, 80, 94); 
     }
-
-    p:first-child{
+ */
+/*     p:first-child{
           background-color: coral;
-    }
+    } */
   </style> 
   <!--  from here html -->
   <div>
