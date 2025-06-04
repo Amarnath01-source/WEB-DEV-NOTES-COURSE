@@ -16,20 +16,21 @@
 
     CSS Cascade Algorithm – process
     1.!important has highest priority – it overrides everything else.
-    2.More specific selectors win – inline css> ID selector> classor any attribute selectors> element selectors >Universal Selector.
-    3.Later rules override earlier ones – if specificity is the same.
-    4.Inherited properties apply – if no matching rule is found.
-    5.Browser defaults apply – if nothing else is defined. 
-
-     CSS Specificity: helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
-     
-    Specificity Calculation:Thes are different selector having different point from which you can calculate specificity by adding them for given question:
+    2.specificity– helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
+      (Try to experiment with this in index.html file by uncommenting more than two different type of selector 
+   inline css > ID selector > classor any attribute selectors > element selectors > Universal Selector.
+  
+   Specificity Calculation:Thes are different selector having different point from which you can calculate specificity by adding them for given question:
     a)Universal Selector: 0
     b)Element selectors and pseudo-elements: 1
     c)Class selectors, attribute selectors, and pseudo-classes: 10
     d)ID selectors: 100
     e)Inline styles: 1000
-
+  
+    3.Later rules override earlier ones – if specificity is the same.
+    4.Inherited properties apply – if no matching rule is found.
+    5.Browser defaults apply – if nothing else is defined. 
+  
    Inheritance: in CSS means some properties are passed from parent elements to their children automatically.
    A parent element is an HTML tag that contains another element or tag inside it.
    Some Common Inherited Properties:
@@ -39,10 +40,7 @@
    d)text-align
    e)visibility
    f)color
-
-    This is the priority order for the selectors and and also specificity:(Try to experiment with this in index.html file by uncommenting more than two different type of Selectors)
-    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
-
+  
   /* Here, I have demonstarted the Efffect of position,if there are two or more different selectoes but they are of same type 
      then, the code editor(vscode) will consider the last one as a winner and the effect will be applied.*/
   /* This is for Example for Effect of Position, please uncomments and use it, select whole css code then ctrl+/ */
