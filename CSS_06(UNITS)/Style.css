@@ -1,0 +1,64 @@
+  
+  
+  *{
+   
+    /* By default, width and height in CSS do not include padding and border, which can lead to weird sizing issues in different screen size*/
+    box-sizing: border-box;
+    
+    /* 1.Many browsers apply default margin and padding to elements like <body>, <h1>, <ul>, etc.
+       2.Resetting them to 0 avoids inconsistent spacing across browsers. */
+    margin: 0;
+    padding: 0;
+  }
+
+  .box1{
+           box-sizing: border-box;
+            /* px(pixels): one physical dot on the screen.Bad for responsive design (because it's fixed, doesn't adapt to screen size). */
+            border: 2px solid black;
+            width: 233px;
+            background-color: aqua;
+            /* there are many border properties from which of them is border radius to give shape to the border */
+            border-radius: 8px;
+            border-color:rgb(138, 32, 191);
+            padding: 40px;
+
+            /* justify content and justify items will not work here because it works in flexbox so dont put it here*/
+
+            /* to align the text */
+            text-align: center;
+
+            /* This adds space below box1 */
+            margin-bottom: 10px; 
+        }
+
+        .box2{
+            /* In CSS, vh stands for "viewport height", and it is a relative unit used 
+               to size elements based on the height of the browser window (the viewport).
+               not good for mobile compatibility use but still it is used 
+               USE CASES EXAMPLE: 
+               1.100vh = 100% of the height of the browser window
+               2.50vh = 50% of the window height 
+               3.10vh = 10% of the window height*/
+               /*you can use both of them,but dont use both at same time border-color: crimson; and border: 2px solid blue; */
+            border: 4px solid rgb(46, 226, 46);
+            /* you can also use border-color: */
+            box-sizing: border-box; 
+            width: 233px;
+            background-color: rgb(175, 246, 242);
+            padding: 40px;
+            /* use case of vh */
+            border-radius: 8vh;
+            text-align: center;
+            margin-bottom: 10px;
+            }
+
+         .box3{
+            border: 2px solid black;
+            border-color: blue;
+            box-sizing: border-box;
+            width: 233px;
+            background-color: rgb(175, 246, 242);
+            padding: 2px;
+            border-radius: 8px;
+            text-align: center;
+         }
