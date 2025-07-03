@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+*{
+    margin: 0;
+    padding:0;
+}
+.box{
+    /* avoid to use display:inline because ,it stops margine and other properties 
+    to work properly best is to use display:inline-block */
+    /* display: inline; */
+    display: inline-block;
+    border: 2px solid blue;
+    margin: 12px;
+    padding: 5px;
+}
+.box1{
+    /* not to display that particular element */
+   /* display: none; */
+   /* it is used when you wnat to hide an element and reserve that space */
+   /* visibility: hidden; */
+}
+    </style>
+</head>
+<body>
+    <!-- here div is black elemennt -->
+   <div class="box box1">Hi i am a box</div>
+   <div>i also a box</div>
+   
+   <!-- this is an inline elements -->
+   <span> hello</span>
+   <span>i am span</span>
+</body>
+</html>
