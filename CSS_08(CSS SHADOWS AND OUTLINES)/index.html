@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SHADOWS AND OUTINES</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+.div{
+    
+    border: 2px solid black;
+    margin: 34px;
+    padding: 34px ;
+    /* dont use solid here it will not create any affect here */ 
+     /* this is a sipme one */
+    /* box-shadow: 2px 2px 2px 2px rgb(11, 208, 11); */ 
+
+    /* double click on inspect of that element to edit and copy that edited code and
+       paste to vs code from brouser(chrome) */
+       box-shadow: -11px 9px 2px 2px rgb(11, 208, 11);  
+}
+
+.div2{
+     border: 2px solid black;
+    margin: 34px;
+    padding: 34px ;
+    /* This is to give shadow inside a box */
+       box-shadow: inset 16px -12px 2px 2px rgb(11, 208, 11);  
+      
+      
+    
+}
+
+.textshadow{
+    margin: 23px;
+    /* text-shadow: 3px 3px goldenrod; */
+    text-shadow: -4px 4px 5px goldenrod;
+}
+
+.outline{
+    /* outline */
+    outline: 2px solid black;
+    /* to increase distance between two outlines */
+    outline-offset: 22px;   
+}
+
+.curve-outline{ 
+    margin: 3px;
+    border: 3px;
+    border-radius: 3px;
+    padding: 1px;
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <DIV class="div">hey hi i am a div tag</DIV>
+
+    <DIV class="div2">hey hi i am a div 2nd tag</DIV>
+    
+    <div class="textshadow">This is a text Shaddow css usecase</div>
+
+    <div class="outline">This is an outline property</div>
+
+    <div class="curve-outline">This is a curve outline</div>
+</body>
+</html>
