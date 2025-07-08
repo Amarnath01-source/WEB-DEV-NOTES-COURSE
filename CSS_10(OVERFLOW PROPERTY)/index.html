@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OVERFLOW PROPERTY</title>
+    <style>
+        .BOX{
+             height:10vh;
+            width:60vw ;
+           border: 4px solid black; 
+           overflow: scroll;
+        }
+
+        .BOX2{
+              height:10vh;
+            width:60vw ;
+           border: 4px solid black; 
+           overflow: scroll;
+           /* thsi is to write text in only horizontal direction */
+           white-space: nowrap;
+           /* This text overflow ellpise prevents text from overflow by showing ... to the last */
+           text-overflow: ellipsis;
+        }
+
+        .BOX3{
+              height:10vh;
+            width:60vw ;
+           border: 4px solid black; 
+            /*we can also control overflow of text in x and y direction */
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* we can aslo write x and y axix like (overflow: x y) */
+            overflow: hidden auto;
+        }
+    </style>
+</head>
+<body>
+     <DIV class="BOX">
+        I am a good writter Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Incidunt ab dolorum at dolore ex! Quas, quos ea quo dolore nisi repellendus 
+         error molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+         quisquam nisi deleniti ullam mollitia rerum asperiores minima tenetur quas consequuntur 
+         autem maxime sapiente, eveniet tempora assumenda consequatur pariatur. Id, ea.
+        </DIV>
+        <DIV class="BOX2">
+        I am a good writter Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Incidunt ab dolorum at dolore ex! Quas, quos ea quo dolore nisi repellendus 
+         error molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+         quisquam nisi deleniti ullam mollitia rerum asperiores minima tenetur quas consequuntur 
+         autem maxime sapiente, eveniet tempora assumenda consequatur pariatur. Id, ea.
+        </DIV>
+        <DIV class="BOX3">
+        I am a good writter Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Incidunt ab dolorum at dolore ex! Quas, quos ea quo dolore nisi repellendus 
+         error molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+         quisquam nisi deleniti ullam mollitia rerum asperiores minima tenetur quas consequuntur 
+         autem maxime sapiente, eveniet tempora assumenda consequatur pariatur. Id, ea.
+        </DIV>
+</body>
+</html>
