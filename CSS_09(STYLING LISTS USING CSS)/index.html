@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS STYLING LISTS</title>
+    <style>
+        nav ul li{
+            /* to add the type of language or thing used to list down items*/
+           list-style:lower-greek;
+           /* you can also add emoji into listing by this  */
+           /* list-style-type: "❤️"; */
+           background-color:rgb(72, 197, 184) ;
+           /* to get color in numbering part also before the 
+              color will only be present on the text part but not on 
+              the numbering part. */
+           list-style-position:inside ;
+           border: 2px solid black;
+           /* you can also use photo as a list styling */
+           /* list-style-image:url(https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcT333De0QMw3VoYoibzQmVujwnvKu6Z3X1Mc5LrGj0hIgqmIxw39kWQXcn1_VCeDDnZ); */
+
+           /* you can also use */
+           list-style: disc inside url(https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcT333De0QMw3VoYoibzQmVujwnvKu6Z3X1Mc5LrGj0hIgqmIxw39kWQXcn1_VCeDDnZ);
+
+           /* main part */
+           /* we align list in navbar horizontally by display:flex;
+            and increase soace between them by padding*/
+           display:flex;
+           padding: 23px;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Help</li>
+        </ul>
+     </nav>
+</body>
+</html>
