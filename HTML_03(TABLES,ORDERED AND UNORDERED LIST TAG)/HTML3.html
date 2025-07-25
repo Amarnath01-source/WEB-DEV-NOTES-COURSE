@@ -19,10 +19,13 @@
   <br>
    <!-- table tag is use to make tables  -->
 <table>
+<!--What things to keep in mind:
+    1.Cheak the css link tag have you written the spelling correctly -->
   <!-- A here We acn see that we can use other attributes -->
   <caption style="color: cornflowerblue;">Employee Details</caption>
   <!-- PROCEDURE thead > tbody > tfoot -->
   <thead>
+<!-- PROGRESSION: thead > tr > th or td -->
   <!-- This is a table row tag used inside table tag to create row -->
     <tr>
       <!-- This is a Table heading tag which is used in writing heading of rows -->
@@ -30,10 +33,8 @@
       <th>Designation</th>
       <th>Fav Language</th>
     </tr>
-
-  </thead>
-<!-- Table row tag use to make row-->
-    <tr>
+</thead>
+    
       <tbody>
       <!-- Here you previously written <th></th> insted of <td></td> next time take care-->
        <!-- <td></td> is a table data tag used to insert data inside of a row or a coloumn -->
@@ -46,8 +47,10 @@
     
     <tfoot>
     <tr>
-      <!-- rowspan tag is used to insert words into no of rows-->
-    <!-- colspan tag is used to insert words into no of coloumns-->
+      <!-- rowspan tag: is used to insert words into no of rows( | ) -->
+      <!-- NOTE: row is [-----] horizontal cells arranged like this so dont be confused -->
+    <!-- colspan tag: is used to insert words into no of coloumns(----) -->
+    <!-- NOTE: Column is [ | ] Vertical cells arranged like this so dont be confused -->
       <td rowspan="1">Sam</td>
       <td colspan="1">Backend </td>
       <td>JavaScript </td>
